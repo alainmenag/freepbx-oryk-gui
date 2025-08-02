@@ -1,0 +1,1028 @@
+
+html {
+	background-color: #cccccc;
+}
+
+body, #page {
+	background-color: transparent !important;
+	height: auto;
+	min-height: 100vh;
+}
+
+#page {
+	padding: 10px;
+}
+
+hr, br, #key, .hide {
+	display: none !important;
+}
+
+h1, h2, h3, h4, h5, h6,
+.fpbx-container .display .section-title h3 {
+	margin: 10px 0;
+}
+
+table, tr, td {
+	padding: 0;
+}
+
+p {
+	margin: 0;
+}
+
+.ui-tooltip {
+	z-index: 10000;
+}
+
+.btn, input, textarea, select, input[type=search].form-control,
+.form-control, .nav.nav-tabs,
+.nav.nav-tabs > li > a, .nav.nav-tabs > li > a:visited,
+.nav.nav-tabs > li > a:hover,
+.fpbx-container .display,
+.nav-container .scroller,
+#floating-nav-bar,
+#floating-nav-bar #fixed-list-button,
+.navbar-nav .dropdown-menu,
+.freepbx-navbar .navbar .stuck-right li .nav-button,
+.freepbx-navbar .navbar .navbar-nav > li > a,
+.freepbx-navbar .navbar .navbar-toggler,
+.freepbx-navbar .navbar .stuck-right li .dropdown-menu,
+#search-btn,
+#fpbxsearch,
+#fpbxsearch input,
+#action-buttons,
+#page #files .file,
+.Editor-editor,
+#page .alert, #page .alert.signature,
+.panel-heading,
+.panel,
+.chosen-container-multi .chosen-choices,
+.swMain .stepContainer .StepTitle,
+.chosen-container-multi .chosen-choices li.search-choice,
+.progress,
+.input-group-prepend,
+.swMain ul.anchor li a,
+.input-group-text,
+.displaybox,
+#page .displaybox .title-bar,
+.displaybox .box,
+.radioset input[type="radio"] + label:last-of-type, .radioset input[type="checkbox"] ~ label:last-of-type,
+.well,
+.well.ui-sortable,
+#page #selectall, #page #unselectall,
+.radioset input[type="radio"] + label:first-of-type, .radioset input[type="checkbox"] ~ label:first-of-type,
+.radioset input[type="radio"] + label, .radioset input[type="checkbox"] ~ label,
+button,
+[type="button"],
+.chosen-container-active.chosen-with-drop .chosen-single, .chosen-container-single .chosen-single, .chosen-container-single .chosen-search input[type="text"],
+.ui-dialog-buttonset .ui-button:not(:first-child), .ui-button.ui-widget.ui-state-default.ui-corner-all.ui-button-text-only, .btn, .btn:visited, .btn.visited, .btn[visited], fieldset[visited] .btn, input[type="button"], input[type="reset"], input[type="submit"], input[type="button"]:visited, input[type="reset"]:visited, input[type="submit"]:visited {
+	border-radius: 0;
+}
+
+.ui-dialog-buttonset .ui-button:not(:first-child), .ui-button.ui-widget.ui-state-default.ui-corner-all.ui-button-text-only, .btn, .btn:visited, .btn.visited, .btn[visited], fieldset[visited] .btn, input[type="button"], input[type="reset"], input[type="submit"], input[type="button"]:visited, input[type="reset"]:visited, input[type="submit"]:visited {
+	margin: 0;
+}
+
+.element-container .row .form-group {
+	row-gap: 10px;
+	margin: 0;
+}
+
+.element-container .row .form-group > :first-child {
+	padding-right: 15px;
+}
+
+.element-container,
+.fpbx-container .display .element-container {
+	margin: 5px 0;
+	padding: 10px;
+}
+
+.fpbx-container .display .row .fpbx-help-block {
+	padding: 0;
+	margin: 0;
+	margin-top: 5px;
+}
+
+.form-group {
+	margin: 10px 0;
+}
+
+.form-control,
+input[type=search].form-control,
+input,
+textarea {
+	border: 1px solid #767676 !important;
+	box-shadow: none !important;
+	border-radius: 0 !important;
+	padding: 5px 10px;
+}
+
+.form-horizontal {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.nav-container {
+	position: relative;
+}
+
+.nav-container .scroller,
+.nav-container .scroller-left,
+.nav-container .scroller-right {
+	background-color: rgba(255, 255, 255, 0.75);
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+.nav-container .scroller-left {
+	left: 0;
+}
+
+.nav-container .scroller-right {
+	right: 0;
+}
+
+.nav-container .scroller i {
+	padding: 10px 15px;
+}
+
+.freepbx-navbar .navbar {
+	border: none;
+	padding: 5px 15px;
+}
+
+.freepbx-navbar .navbar {
+	border: none;
+	padding: 5px 15px;
+}
+
+.navbar-nav .dropdown-item {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+}
+
+#floating-nav-bar,
+#floating-nav-bar #fixed-list-button,
+.navbar-nav .dropdown-menu,
+.freepbx-navbar .navbar .stuck-right li .nav-button,
+.freepbx-navbar .navbar .navbar-nav > li > a,
+.freepbx-navbar .navbar .navbar-toggler,
+.freepbx-navbar .navbar .stuck-right li .dropdown-menu,
+#search-btn,
+#fpbxsearch,
+#fpbxsearch input {
+	border: none !important;
+	box-shadow: none;
+	margin: 0;
+}
+
+.freepbx-navbar .navbar {
+	display: flex;
+	gap: 10px;
+}
+
+.freepbx-navbar .navbar .navbar-nav > li > a {
+	background-color: transparent;
+}
+
+.freepbx-navbar .navbar .navbar-nav > li.active > a {
+	color: #000000;
+}
+
+.freepbx-navbar .navbar .navbar-brand {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-collapse,
+.freepbx-navbar .navbar .navbar-toggler,
+.freepbx-navbar .navbar .stuck-right {
+	position: relative;
+	float: none;
+	top: 0;
+	margin: 0;
+}
+
+.freepbx-navbar .navbar .stuck-right {
+	padding: 0;
+	display: flex;
+	gap: 2.5px;
+}
+
+#search-btn,
+.freepbx-navbar .navbar .stuck-right li .nav-button,
+.freepbx-navbar .navbar .stuck-right li .nav-button[style*="display: inline;"] {
+    padding: 10px;
+    min-width: 45px;
+    display: flex;
+    justify-content: center;
+    height: auto;
+    align-items: center;
+    border-radius: 2.5px;
+}
+
+.freepbx-navbar .navbar .stuck-right > li {
+	display: flex;
+}
+
+.freepbx-navbar .navbar .stuck-right li .nav-button .fa-cog,
+.freepbx-navbar .navbar .stuck-right li .nav-button .fa-language {
+	margin: 0;
+}
+
+#fpbxsearch.in {
+	top: 54px;
+}
+
+#floating-nav-bar,
+#floating-nav-bar .floating-nav-bar-contents {
+	min-height: auto;
+}
+
+#floating-nav-bar {
+    padding: 10px;
+    left: 100%;
+    right: auto;
+}
+
+#floating-nav-bar.show {
+	left: auto;
+	right: 0;
+}
+
+#floating-nav-bar #fixed-list-button {
+	padding: 10px;
+	height: auto;
+}
+
+.alert,
+.alert.signature {
+	border: none;
+	padding: 15px;
+	border-radius: 2.5px;
+	margin: 0;
+}
+
+.panel-heading,
+.alert.signature .panel-group .panel,
+.alert.signature .panel-group .panel .panel-body {
+	border: none;
+}
+
+#page_body {
+    padding-top: 60px;
+    padding-bottom: 130px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.fpbx-container .display.full-border {
+	max-width: calc(100vw - 30px);
+}
+
+.fpbx-container .display.full-border {
+    padding: 0;
+    border: none;
+}
+
+.fpbx-container .display .row {
+	margin: 0;
+	gap: 5px;
+}
+
+.container-fluid {
+	padding: 0;
+}
+
+.panel,
+.well {
+	margin-bottom: 15px;
+	margin: 0;
+}
+
+.well.ui-sortable {
+	height: auto !important;
+	margin: 0;
+}
+
+#page_body .toolbar.well {
+	margin-bottom: 10px;
+}
+
+#page_body .toolbar,
+#page_body .toolbar h1, #page_body .toolbar .btn {
+	margin: 0;
+	min-width: auto;
+}
+
+#page_body .toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+h1 + .well,
+h1 + .panel,
+.alert + .well,
+.panel + .alert {
+	margin: 10px 0;
+}
+
+h1 + form,
+h2 + form,
+h1 + ul,
+h1 + .fpbx-container,
+.alert + .fpbx-container,
+#filemessage {
+	margin-top: 10px;
+}
+
+.panel-body > .well:first-child,
+.modal-body > .well:first-child {
+	margin-bottom: 10px;
+}
+
+.tab-pane > .alert:first-child {
+	margin: 10px 0;
+}
+
+#footer {
+	height: auto;
+	padding: 45px 25px;
+	bottom: 0;
+}
+
+#footer hr {
+	display: none;
+}
+
+#footer #footer__left__logo__wrapper a,
+#footer #footer__right__logo__wrapper a {
+	display: flex;
+}
+
+#footer #footer_content {
+	gap: 20px;
+}
+
+#footer #footer_content #footer_logo,
+#footer #footer_content img {
+	margin: auto;
+	padding: 0;
+	float: none;
+}
+
+#footer #footer_content a {
+	background-color: transparent;
+}
+
+#action-buttons {
+	background-color: #a3a3a3;
+}
+
+.fpbx-container .display {
+	padding: 0;
+	margin: 0;
+}
+
+.container-fluid .display {
+	flex-direction: column;
+}
+
+.container-fluid .display.full-border,
+.container-fluid .display.active {
+	display: flex;
+}
+
+.fpbx-container .display .section {
+	background-color: #ffffff;
+	border: none;
+}
+
+.jstree-proton {
+	background-color: #ffffff;
+	margin: 0 10px;
+}
+
+#page_body .CodeMirror.cm-s-default {
+	margin-top: 10px;
+}
+
+form {
+	padding: 10px;
+	border-radius: 10px;
+	background-color: #ffffff;
+}
+
+.input-group-addon:last-child {
+	width: auto;
+}
+
+[role="tabpanel"] + form {
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+.row,
+.row .col,
+.row [class*="col-"],
+.toolbar .row > div {
+	margin: 0;
+	padding: 0;
+	top: 0;
+	left: 0;
+}
+
+@media (min-width: 992px) {
+	.fpbx-container .display .element-container .form-group div[class*="col-"].control-label,
+    .fpbx-container .display .element-container .form-group div[class*="col-"] {
+        top: 0;
+	   left: 0;
+    }
+}
+
+.nav.nav-tabs,
+.nav.nav-tabs > li > a, .nav.nav-tabs > li > a:visited,
+.nav.nav-tabs > li > a:hover,
+.fpbx-container .display,
+.nav-container .scroller {
+	border: none;
+}
+
+.nav.nav-tabs[style*="left: -"] {
+	padding-left: 45px;
+}
+
+.nav.nav-tabs {
+	display: flex;
+	gap: 2.5px;
+	margin: 0;
+	flex-wrap: nowrap;
+	align-items: flex-end;
+	overflow: auto;
+}
+
+.fpbx-container > .full-border > .nav-tabs {
+	margin: 0;
+}
+
+.nav.nav-tabs > li > a.active,
+.nav.nav-tabs > li > a.active:hover,
+.nav.nav-tabs > li > a.active:focus,
+.nav.nav-tabs > li > a:focus {
+	background: #f2f2f2;
+	border: none;
+}
+
+.nav.nav-tabs > li > a, .nav.nav-tabs > li > a:visited {
+	margin: 0;
+}
+
+.nav-container .wrapper {
+	height: auto;
+}
+
+#page_body .nav-container .wrapper .list {
+	margin: 0 !important;
+	height: 100%;
+	position: relative;
+}
+
+.modal > form {
+	background-color: transparent;
+}
+
+.swMain ul.anchor li,
+.swMain ul.anchor li a.selected,
+.swMain ul.anchor li a.disabled,
+.swMain ul.anchor li a .stepDesc,
+.swMain ul.anchor li a.done,
+.swMain ul.anchor  {
+	box-shadow: none;
+	margin: 0;
+	float: none;
+	padding: 0;
+}
+
+.swMain .stepContainer .StepTitle,
+.swMain .stepContainer .display {
+	width: 100%;
+}
+
+.swMain ul.anchor {
+	display: flex;
+	padding: 5px;
+	flex-wrap: wrap;
+	gap: 5px;
+}
+
+.swMain ul.anchor li a,
+.swMain ul.anchor li a.selected,
+.swMain ul.anchor li a.done,
+.swMain ul.anchor li a.disabled {
+	display: flex;
+	align-items: center;
+	padding: 10px;
+}
+
+.swMain ul.anchor li a .stepNumber {
+	display: none;
+}
+
+.tab-content .nav-container {
+	margin-top: 5px;
+}
+
+.tab-content .tab-pane:not(.tab-pane .tab-pane) {
+	padding: 15px;
+	background-color: #f2f2f2;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.fpbx-container .display.full-border,
+.tab-content .tab-pane:not(.tab-pane .tab-pane).active {
+	display: flex;
+	flex-direction: column;
+}
+
+.tab-content .tab-pane:not(.tab-pane .tab-pane).active {
+	gap: 10px;
+}
+
+.list-group {
+	border-radius: 0;
+}
+
+.rnav,
+.rnav ul {
+	margin: 0;
+}
+
+a:hover,
+.rnav ul a,
+.list-group a {
+	text-decoration: none;
+}
+
+.bootnav .list-group-item:first-child {
+	border-bottom: none;
+}
+
+.rnav ul a:hover,
+.rnav ul li > a:hover,
+.list-group a:hover {
+	background-color: #f2f2f2;
+}
+
+.rnav + .container-fluid {
+	display: inline;
+}
+
+#page_body #maincdr {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#page_body #maincdr .cdr {
+	margin: auto;
+	width: 100%;
+}
+
+#page_body .bootnav {
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+#general .section {
+	margin-bottom: 10px;
+}
+
+.bootstrap-table .fixed-table-container .table {
+	background-color: #ffffff;
+}
+
+.fixed-table-container {
+	max-width: calc(100vw - 30px);
+	overflow: auto;
+}
+
+#set_table th {
+	border: 1px solid #808080;
+}
+
+.fpbx-container .tab-content {
+	display: flex;
+	gap: 10px;
+	flex-direction: column;
+}
+
+#module-listing-container {
+	margin: 0;
+}
+
+#page_body .output pre {
+	margin: 10px 0;
+}
+
+.bootstrap-table {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	margin: 10px 0;
+}
+
+.fixed-table-toolbar {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 10px;
+	flex-wrap: wrap;
+}
+
+.bootstrap-table .fixed-table-toolbar .bs-bars, .bootstrap-table .fixed-table-toolbar .search, .bootstrap-table .fixed-table-toolbar .columns {
+	margin: 0;
+	float: none !important;
+}
+
+#module-listing-container #modulelist table {
+	border: none;
+}
+
+#modulelist-header,
+#module-listing-container #modulelist .moduleheader {
+	display: flex;
+	justify-content: flex-start;
+	gap: 10px;
+	align-items: center;
+}
+
+#modulelist-header {
+	align-items: flex-end;
+}
+
+#module-listing-container #modulelist .fullmodule,
+#module-listing-container #modulelist .moduleheader {
+	height: auto;
+}
+
+#modulelist-header,
+#module-listing-container #modulelist .moduleheader {
+	padding: 10px;
+}
+
+#modulelist-header > span,
+#module-listing-container #modulelist #modulelist-header > span,
+#module-listing-container #modulelist > span,
+#module-listing-container #modulelist .moduleheader > i,
+#module-listing-container #modulelist .moduleheader > span {
+	margin: 0;
+	height: auto;
+	text-overflow: ellipsis;
+	overflow-y: auto;
+	line-height: normal;
+	position: inherit;
+	flex: 1 1 150px;
+}
+
+#module-listing-container #modulelist #modulelist-header > span.modulename {
+	flex: 1 1 180px;
+}
+
+#module-listing-container #modulelist .moduleheader i {
+	flex: 1 1 20px;
+}
+
+#module-listing-container #modulelist div.moduleinfopane {
+	border: none;
+}
+
+.moduleinfopane .row .col-2 {
+	background-color: #dee2e6;
+}
+
+#module-listing-container #modulelist .fullmodule .nav-pills .nav-link {
+	border-radius: 0px;
+	padding: 10px;
+}
+
+#module-listing-container #modulelist .fullmodule .tab-content {
+	padding: 15px;
+}
+
+#module-listing-container #modulelist table {
+	width: 100%;
+	margin: 0;
+	border-collapse: collapse;
+}
+
+.modulequickinfo tr td {
+	padding: 10px;
+}
+
+#modulelist .category {
+	overflow: auto;
+}
+
+form[name="onlineRepo"] {
+	overflow: auto;
+}
+
+form[name="onlineRepo"] .radioset input[type="checkbox"] + label {
+	margin: 0;
+	border-radius: 0;
+}
+
+.help span, a.info span {
+    font-family: sans-serif;
+    font-size: 12px;
+    text-align: left;
+    line-height: 1;
+}
+
+#module-listing-container #modulelist .fullmodule .tab-content [id*="changelog_"] {
+	line-height: 1.5;
+}
+
+
+#page_body #welcomepage {
+	position: relative;
+	width: auto;
+	height: auto;
+}
+
+[href="assets/phpinfo/css/phpinfo.css"] + .freepbx-navbar + #fpbxsearch + #page_body td {
+	padding: 15px;
+}
+
+[href="assets/phpinfo/css/phpinfo.css"] + .freepbx-navbar + #fpbxsearch + #page_body img {
+	padding: 10px;
+}
+
+[href="assets/phpinfo/css/phpinfo.css"] + .freepbx-navbar + #fpbxsearch + #page_body a:link {
+	background-color: transparent;
+}
+
+#tdialplan.tab-pane.active {
+	display: block;
+}
+
+#tdialplan.tab-pane br {
+	display: block !important;
+}
+
+i.fa {
+	font-family: sans-serif;
+	
+}
+
+i.fa::before,
+i.fa::after {
+	font-family: FontAwesome !important;
+}
+
+.line-control-menu-bar,
+.line-control-status-bar {
+	background-image: none;
+}
+
+#submitEmailSettings {
+	margin-top: 10px;
+}
+
+.cron-ui {
+	row-gap: 10px;
+}
+
+.cron-ui .form-control {
+	border: none !important;
+}
+
+.chosen-container .chosen-results li.highlighted {
+	background-image: none !important;
+}
+
+.chosen-container-multi .chosen-choices li.search-choice {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+	padding: 5px;
+}
+
+.chosen-container-multi .chosen-choices li.search-choice .search-choice-close {
+	position: relative;
+	top: 0;
+	right: 0;
+}
+
+#page #files .file {
+	margin: 5px 0;
+}
+
+#summarytab .container-fluid,
+#scheduletab .container-fluid {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#scheduletab .offset-11 {
+	min-width: 100%;
+}
+
+.printextension_header {
+	margin-bottom: 15px;
+}
+
+.printextension_header .form-group {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.list-extensions .display .row {
+    gap: 0;
+}
+
+
+table#weakpasswords {
+	margin: 0;
+}
+ 
+table#weakpasswords th,
+table#weakpasswords td {
+	margin: 0;
+	border: none;
+	padding: 10px 15px;
+}
+
+.fpbx-container .display #codec .row {
+	gap: 0px;
+}
+
+#acodeclist, #vcodeclist {
+	margin: 0 5px;
+}
+
+ul#acodeclist li a,
+ul#vcodeclist li a {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+}
+
+.lnet,
+[data-id="ice-blacklist"] .form-inline,
+[data-id="ice-host-candidates"] .form-inline {
+	display: flex;
+	gap: 10px;
+}
+
+#pjsip_identifers_sortable {
+	display: flex;
+	gap: 5px;
+	padding: 0;
+	list-style: none;
+}
+
+.remove-from-show-columns a {
+	margin-right: 5px;
+}
+
+.section-title h2 i,
+#add_entrie i {
+	margin-right: 10px;
+}
+
+form#frm_voicemail {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+form#frm_voicemail .row {
+	gap: 0;
+	border: none;
+}
+
+form#frm_voicemail .row [class*="col-"] .panel {
+	border: none;
+	padding: 5px;
+	box-shadow: none;
+}
+
+form#frm_voicemail td {
+	border: none;
+}
+
+form#frm_voicemail .radioset {
+	padding: 5px;
+}
+
+#settings .radioset {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.fpbx-container .display [data-id="access"] .row {
+	gap: 0;
+}
+
+[data-id="parkalt"] .destdropdown {
+	margin-bottom: 5px;
+}
+
+#logfiles_toolbar.toolbar .row > div {
+	margin: 0;
+	flex: 1 1 55px;
+	width: auto;
+}
+
+#logfiles_toolbar,
+#logfiles_toolbar .row {
+	gap: 5px;
+	width: 100%;
+	margin: 0;
+}
+
+#logfiles_toolbar .input-group-prepend {
+	flex: 1 1 auto;
+	padding: 0;
+	margin: 0;
+}
+
+#logfiles_toolbar .input-group {
+	flex-wrap: nowrap;
+}
+
+#logfiles_toolbar .input-group input,
+#logfiles_toolbar .input-group select {
+	flex: 1 1 100%;
+	min-width: 55px;
+}
+
+#page .displaybox {
+	box-shadow: none;
+}
+
+#page #page_Main_Overview_overview .summary {
+	border: none;
+}
+
+#page .displaybox .title-bar {
+	padding: 5px;
+}
+
+#page_Main_Statistics_statistics .row {
+	flex-wrap: nowrap;
+}
+
+#page_Main_Statistics_statistics .row [class*="col-"] {
+	flex: 1 1 auto;
+	max-width: fit-content;
+}
+
+#dashboard_notepad_new .row.box {
+	display: flex;
+	gap: 5px;
+}
+
+#dashboard_notepad_new .row.box [class*="col-"] {
+	min-width: 100%;
+}
+
+#dashboard_notepad_container .row.box {
+    padding: 10px;
+    line-height: normal;
+}
+
+#page .btn-stats .caret {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+#login_icon_holder .login_item_title {
+	margin: 10px;
+}
+
+#login_icon_holder .login_item_title .login_item_text {
+	margin-top: 10px;
+}

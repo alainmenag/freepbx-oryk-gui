@@ -1,0 +1,53 @@
+<!-- /var/www/html/admin/modules/oryk_gui/module.xml -->
+<module>
+     <rawname>oryk_gui</rawname>
+     <name>GUI</name>
+     <repo>commercial</repo>
+     <version>1.0.9</version>
+     <dbversion>1.0.9</dbversion>
+     <publisher>Oryk</publisher>
+	<type>tool</type>
+	<class>Oryk_gui</class>
+	<phpclass>Oryk_gui</phpclass>
+     <canuninstall>no</canuninstall>
+	<candisable>no</candisable>
+     <license>AGPLv3</license>
+     <licenselink>http://www.gnu.org/licenses/agpl-3.0.txt</licenselink>
+     <changelog>
+          *1.0.1* New
+     </changelog>
+     <category>Oryk</category>
+     <description>Enhance the experience.</description>
+     <more-info>https://oryk.com/voip/gui</more-info>
+     <location>System Banner</location>
+     <files>
+        <file>functions.inc.php</file>
+     </files>
+    <assets>
+        <css>assets/css/gui.css</css>
+    </assets>
+	<menuitems>
+		<oryk_gui order="1" display="oryk_gui">GUI</oryk_gui>
+		<oryk_support order="9" access="all" category="Oryk" requires_auth="false" href="https://oryk.com/support" target="oryk_support">
+			<![CDATA[
+				<link rel="stylesheet" type="text/css" href="/admin/modules/oryk_gui/assets/css/reset.css">
+				<script type="text/javascript" src="/admin/modules/oryk_gui/assets/js/extend.js"></script>
+				<script>document.querySelector('[target="oryk_support"]').parentElement.classList.add('hide');</script>
+			]]>
+		</oryk_support>
+		<oryk_www order="10" access="all" category="Oryk" requires_auth="false" href="https://oryk.com/" target="oryk">
+			<![CDATA[
+				<span>oryk.com</span>
+				<i class="fa fa-external-link"></i>
+			]]>
+		</oryk_www>
+	</menuitems>
+	<depends>
+		<module>core</module>
+		<module>userman</module>
+	</depends>
+     <supported>
+        <version>16.0</version>
+        <version>17.0</version>
+     </supported>
+</module>

@@ -1,0 +1,51 @@
+
+._launcher {
+	min-height: calc(100vh - 200px);
+	display: flex;
+}
+
+._launcher_items {
+	padding: 25px;
+	display: flex;
+	font-size: 2em;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 25px;
+	justify-content: space-evenly;
+	height: 100%;
+	max-width: 960px;
+	margin: auto;
+}
+
+._launcher_items ._action {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+	text-decoration: none;
+}
+
+._launcher_items ._action ._inside {
+	width: 100%;
+	min-width: 180px;
+}
+
+._launcher_items ._action ._icon {
+	display: flex;
+	font-size: 3em;
+	justify-content: center;
+}
+
+._launcher_items ._action ._icon ._count {
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: #000000;
+	font-weight: bold;
+	font-size: 0.65em;
+}
+
+._launcher_items ._action ._label {
+	font-size: 0.65em;
+	text-align: center;
+}
