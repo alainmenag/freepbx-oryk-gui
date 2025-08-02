@@ -4,9 +4,9 @@
 // A simple function to set a FreePBX setting
 function set_freepbx_setting($key, $value)
 {
-	$sql = "REPLACE INTO freepbx_settings (`keyword`, `value`, `name`, `type`, `defaultval`, `readonly`, `hidden`) VALUES (?, ?, ?, 'text', '', 0, 0)";
+	$sql = "UPDATE freepbx_settings SET `value` = ? WHERE `keyword` = ?";
 	$sth = \FreePBX::Database()->prepare($sql);
-	$sth->execute([$key, $value, $key]);
+	$sth->execute([$key, $value]);
 }
 
 // Set the custom CSS path
@@ -14,3 +14,4 @@ function set_freepbx_setting($key, $value)
 $css_path = '';
 
 set_freepbx_setting('BRAND_CSS_CUSTOM', $css_path);
+set_freepbx_setting('BRAND_IMAGE_FREEPBX_LINK_LEFT', '/admin/config.php?display=index');
