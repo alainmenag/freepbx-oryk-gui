@@ -10,8 +10,8 @@ function Oryk_gui_configpageinit($page)
 
 	// If logged in and module no module access, load assets
 	if ($user && !$user['admin'] && !$_SESSION['AMP_user']->checkSection('oryk_gui')) {
-		echo '<link rel="stylesheet" type="text/css" href="/admin/modules/oryk_gui/assets/css/reset.css">';
-		echo '<script type="text/javascript" src="/admin/modules/oryk_gui/assets/js/extend.js"></script>';
+		echo '<link rel="stylesheet" type="text/css" href="/admin/assets/oryk_gui/admin/reset.css">';
+		echo '<script type="text/javascript" src="/admin/assets/oryk_gui/admin/extend.js"></script>';
 	}
 
 	// print all $freepbx keys

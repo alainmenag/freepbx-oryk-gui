@@ -27,7 +27,7 @@ class Oryk_gui extends FreePBX_Helpers implements \BMO
 			case 'oryk_gui':
 
 				return load_view(__DIR__ . '/views/gui.php', [
-					'userType' => $this->userType(),
+					//'userType' => $this->userType(),
 				]);
 			default:
 				break;

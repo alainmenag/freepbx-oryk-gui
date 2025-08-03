@@ -6,7 +6,7 @@
 	<version>1.0.9</version>
 	<dbversion>1.0.9</dbversion>
 	<publisher>Oryk</publisher>
-	<type>tool</type>
+	<type>setup</type>
 	<class>Oryk_gui</class>
 	<phpclass>Oryk_gui</phpclass>
 	<canuninstall>no</canuninstall>
@@ -23,9 +23,12 @@
 	<files>
 		<file>functions.inc.php</file>
 	</files>
-	<assets>
-		<css>assets/css/gui.css</css>
+	<!-- <assets>
+		<css>css/gui.css</css>
 	</assets>
+	<css>
+		<filename>css/gui.css</filename>
+	</css> -->
 	<menuitems>
 		<oryk_gui category="Oryk" order="1" display="oryk_gui" access="all" requires_auth="true">
 			<![CDATA[
@@ -36,8 +39,8 @@
 		<oryk_support category="Oryk" order="9" access="all" requires_auth="false"
 			href="https://oryk.com/support" target="oryk_support">
 			<![CDATA[
-				<link rel="stylesheet" type="text/css" href="/admin/modules/oryk_gui/assets/css/reset.css">
-				<script type="text/javascript" src="/admin/modules/oryk_gui/assets/js/extend.js"></script>
+				<link rel="stylesheet" type="text/css" href="/admin/assets/oryk_gui/admin/reset.css">
+				<script type="text/javascript" src="/admin/assets/oryk_gui/admin/extend.js"></script>
 				<span>Support</span>
 				<i class="fa fa-external-link"></i>
 			]]>
