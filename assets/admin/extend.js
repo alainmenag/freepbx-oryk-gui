@@ -7,12 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	
 	if (activeMenuItem) $(activeMenuItem).addClass('active');
 
-	// $('.navbar-brand').on('click', function (e) {
-	// 	e.preventDefault();
-	// 	e.stopPropagation();
-	// 	//window.location.href = 'index.php?display=index';
-	// });
-
+	$('.navbar-brand').attr('href', 'index.php?display=index');
 });
 
 /*

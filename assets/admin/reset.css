@@ -205,6 +205,10 @@ textarea {
     padding: 0;
 }
 
+.freepbx-navbar .navbar .navbar-brand img {
+	pointer-events: none;
+}
+
 .navbar-collapse,
 .freepbx-navbar .navbar .navbar-toggler,
 .freepbx-navbar .navbar .stuck-right {
