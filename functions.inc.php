@@ -14,6 +14,11 @@ function Oryk_gui_configpageinit($page)
 		echo '<script type="text/javascript" src="/admin/assets/oryk_gui/admin/extend.js"></script>';
 	}
 
+	//echo '<script type="text/javascript" src="/admin/assets/oryk_gui/vendor/utterscroll-master/jquery-scrollable.js"></script>';
+	echo '<script type="text/javascript" src="/admin/assets/oryk_gui/vendor/touch-scroll.js"></script>';
+
+
+
 	// print all $freepbx keys
 	// die(json_encode([
 	// 	'freepbx' => array_keys(get_object_vars($freepbx)),

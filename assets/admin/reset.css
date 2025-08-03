@@ -30,6 +30,11 @@ p {
 	margin: 0;
 }
 
+.disable {
+	pointer-events: none;
+	opacity: 0.5;
+}
+
 .ui-tooltip {
 	z-index: 10000;
 }

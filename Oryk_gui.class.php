@@ -6,9 +6,18 @@ namespace FreePBX\modules;
 use BMO;
 use PDO;
 use FreePBX_Helpers;
-
 class Oryk_gui extends FreePBX_Helpers implements \BMO
 {
+	public $sets = [
+		'TOUCH_SCROLL' => [
+			'type' => 'bool',
+			'default' => 1,
+			'title' => 'Touch Scroll',
+			'help' => 'Touch scrolling allows you to scroll through lists and menus using touch gestures.',
+			'disabled' => true,
+		],
+	];
+
 	public function __construct($freepbx = null)
 	{
 		if ($freepbx == null) {
@@ -27,15 +36,16 @@ class Oryk_gui extends FreePBX_Helpers implements \BMO
 			case 'oryk_gui':
 
 				return load_view(__DIR__ . '/views/gui.php', [
-					//'userType' => $this->userType(),
+					'sets' => $this->sets,
+					'user' => $this->getUser(),
 				]);
 			default:
 				break;
 		}
 	}
 
-	public function getUser() {
-
+	public function getUser()
+	{
 		$ampUser = isset($_SESSION['AMP_user']) ? $_SESSION['AMP_user'] : null;
 		$username = $ampUser ? $ampUser->username : null;
 
