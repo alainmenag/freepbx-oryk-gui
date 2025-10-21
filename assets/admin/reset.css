@@ -39,6 +39,10 @@ p {
 	z-index: 10000;
 }
 
+#notie-alert-outer {
+	background-color: #333333;
+}
+
 .btn, input, textarea, select, input[type=search].form-control,
 .form-control, .nav.nav-tabs,
 .nav.nav-tabs > li > a, .nav.nav-tabs > li > a:visited,
