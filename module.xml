@@ -3,8 +3,8 @@
 	<rawname>oryk_gui</rawname>
 	<name>GUI</name>
 	<repo>commercial</repo>
-	<version>1.0.9</version>
-	<dbversion>1.0.9</dbversion>
+	<version>1.1.2</version>
+	<dbversion>1.1.2</dbversion>
 	<publisher>Oryk</publisher>
 	<type>setup</type>
 	<class>Oryk_gui</class>
@@ -14,6 +14,9 @@
 	<license>AGPLv3</license>
 	<licenselink>http://www.gnu.org/licenses/agpl-3.0.txt</licenselink>
 	<changelog>
+		*1.1.2* Settings save on change, no Submit button; cache-busted assets
+		*1.1.1* Touch Scroll now honors its setting; fixed jQuery/body load-order bugs that kept it from ever running
+		*1.1.0* Dark Mode setting; per-user settings persistence (kvstore) with ajax save
 		*1.0.1* New
 	</changelog>
 	<category>Oryk</category>
@@ -23,12 +26,10 @@
 	<files>
 		<file>functions.inc.php</file>
 	</files>
-	<!-- <assets>
-		<css>css/gui.css</css>
-	</assets>
-	<css>
-		<filename>css/gui.css</filename>
-	</css> -->
+	<!-- assets/css/gui.css is deliberately NOT declared here: an <assets> css
+	     entry is only pulled in on this module's own page. Dark mode has to
+	     apply everywhere, so gui.css is loaded through the BRAND_CSS_CUSTOM
+	     advanced setting instead (set by install.php). -->
 	<menuitems>
 		<oryk_gui category="Oryk" order="1" display="oryk_gui" access="all" requires_auth="true">
 			<![CDATA[

@@ -1,0 +1,42 @@
+/*
+ * gui.css
+ *
+ * Global theming layer. Loaded into every FreePBX admin page via the
+ * BRAND_CSS_CUSTOM advanced setting (see install.php), so everything in here
+ * must be scoped to a class -- it is on the page whether or not the feature
+ * that uses it is enabled.
+ *
+ * The .oryk-dark class is put on <html> by the inline bootstrap script in
+ * functions.inc.php, before first paint.
+ */
+
+html.oryk-dark {
+	filter: invert(1) hue-rotate(225deg);
+	background-color: #ffffff; /* inverts to #333333 */
+}
+
+/*
+ * Re-invert anything with real colors of its own, otherwise photos, logos and
+ * video come out as negatives.
+ */
+html.oryk-dark [checked="checked"],
+html.oryk-dark img,
+html.oryk-dark svg image,
+html.oryk-dark video,
+html.oryk-dark canvas,
+html.oryk-dark embed,
+html.oryk-dark object,
+html.oryk-dark iframe {
+	filter: invert(1) hue-rotate(125deg);
+}
+
+/* Opt-outs: mark an element .oryk-no-invert to leave it alone. */
+html.oryk-dark .oryk-no-invert {
+	filter: invert(1) hue-rotate(125deg);
+}
+
+html.oryk-dark img.oryk-no-invert,
+html.oryk-dark video.oryk-no-invert,
+html.oryk-dark canvas.oryk-no-invert {
+	filter: none;
+}
